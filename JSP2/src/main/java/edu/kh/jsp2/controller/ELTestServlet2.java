@@ -38,7 +38,7 @@ public class ELTestServlet2 extends HttpServlet {
 		
 		
 		System.out.println(req.getAttribute("requestValue"));
-		//request scope 객체에 세팅한값 = 현재 sevlet에서 유효한 값.
+		//request scope 객체에 세팅한값 = 현재 servlet에서 유효한 값.
 		//어디까지 유효한가.
 		
 		

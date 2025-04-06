@@ -26,7 +26,7 @@
 	
 	<h3>EL은 자료형 변환을 자동 수행 해준다</h3>
 	
-	
+
 	<ul>
 	<!-- EL은 문자열비교 ==(연산자) 사용가능 -->
 	<li>${param.str=="abc"}</li>
@@ -53,9 +53,6 @@
 	<li>paramValues.check[1]:${paramValues.check[1]}</li>
 	<li>paramValues.check[2]:${paramValues.check[2]}</li>
 	</ul>
-	
-	
-	
 	
 </body>
 </html>

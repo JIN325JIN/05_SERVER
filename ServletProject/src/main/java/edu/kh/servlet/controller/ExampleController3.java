@@ -9,11 +9,8 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-
 @WebServlet("/coffee")
 public class ExampleController3 extends HttpServlet{
-	
-	
 	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -36,14 +33,12 @@ public class ExampleController3 extends HttpServlet{
 		System.out.println(option);
 		System.out.println(optionArr);//주소값
 		
-		
 		//opt 미 선택시 optionArr == null
 		if(optionArr!=null) {
 			for(String opt: optionArr) {
 				System.out.println(opt);
 			}
 		}
-		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/result2.jsp");
 		dispatcher.forward(req, resp);
 	}

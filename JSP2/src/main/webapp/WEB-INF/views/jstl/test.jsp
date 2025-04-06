@@ -66,8 +66,6 @@
 	</ul>
 	<!-- session scope에 존재하는 test2제거  -->
 	<c:remove var ="test2" scope="session"/>
-	
-	
 	<ul>
 		<li>page:${pageScope.test2}</li>
 		<li>request:${requestScope.test2}</li>
@@ -247,8 +245,5 @@
 			
 		</c:forEach>
 	</ul>
-	
-	
-	
 </body>
 </html>

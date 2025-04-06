@@ -84,6 +84,7 @@
 		pageContext.setAttribute("menu", "짬짜면(pageScope)");
 	%>
 	<h3>menu : ${menu}</h3>
+	<h3>원하는 scope 의 세팅된 값 얻어오기</h3>
 	<p>${pageScope.menu}</p>
 	<p>${requestScope.menu}</p>
 	<p>${sessionScope.menu}</p>

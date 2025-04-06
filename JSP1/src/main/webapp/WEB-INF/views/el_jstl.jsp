@@ -53,6 +53,7 @@
 		age : ${param.age}
 	</div>
 	<hr><hr>
+	<h1>JSTL (Jsp Standard Tag Library)</h1>
 	<pre>
 	JSP에서 자주 사용하는 Java코드를 
 	(if,for,변수 선언...)
@@ -64,6 +65,11 @@
 	2.프로젝트 webapp/WEB-INF/lib 폴더에
 	다운로드 받은 라이브러리 추가 (드라그앤드랍, 복붙 둘다 가능!!)
 	3.JSTL 사용할 JSP 파일 제일 위에 taglib 추가 구문 작성
+	taglib prefix ="c" uri="http://java.sun.com/jsp/jstl/core" 바로 이거.
+	core안에 있는거 쓰려고 "c"쓰는거임// fn :function도 있음
+	
+	
+	
 	</pre>
 	<h3>JSTL c:if 문 사용해보기</h3>
 	
