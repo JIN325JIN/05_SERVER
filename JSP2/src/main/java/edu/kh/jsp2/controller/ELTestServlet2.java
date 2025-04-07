@@ -61,6 +61,7 @@ public class ELTestServlet2 extends HttpServlet {
 		//-서버 시작시 생성, 서버 종료시 소멸
 		
 		//1) application scope 객체 얻어오기(세션에서 얻어와도 되고, 어플리케이션에서 얻어와도 된다)
+		//이름이 갑자기 바뀌어서 어렵네
 		ServletContext application =req.getServletContext();
 		
 		//2) 값 세팅

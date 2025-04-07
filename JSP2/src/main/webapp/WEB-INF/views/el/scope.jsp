@@ -66,6 +66,7 @@
 
 	<%
 	//page scope 객체에 값 세팅
+	//jsp에서 제공하는 내장객체의 이름만 불러다가 사용
 	pageContext.setAttribute("pageValue","page scope 객체에 세팅한 값");
 	%>
 	
