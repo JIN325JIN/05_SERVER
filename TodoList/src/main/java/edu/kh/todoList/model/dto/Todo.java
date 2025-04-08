@@ -1,13 +1,14 @@
 package edu.kh.todoList.model.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data//getter,setter,toString
 @AllArgsConstructor
 @NoArgsConstructor
-@builder
+@Builder
 
 public class Todo {
 

@@ -89,9 +89,7 @@ public class JDBCTemplate {
 			e.printStackTrace();
 		}
 		return conn;
-		
-		
-			
+
 		}
 			//------------------------------------------------------------------------------
 	
@@ -127,8 +125,6 @@ public class JDBCTemplate {
 				e.printStackTrace();
 				}
 				
-				
-				
 			}
 
 			//-------------------------------------------------------------
@@ -148,9 +144,6 @@ public class JDBCTemplate {
 					System.out.println("커넥션 close()중 예외 발생");
 					e.printStackTrace();
 				}
-				
-				
-				
 			}
 
 
