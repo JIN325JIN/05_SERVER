@@ -21,9 +21,12 @@ public class TodoDeleteServlet extends HttpServlet{
 		
 		//할일제거
 		try {
+			
 			//1.todoListServiceImple객체 생성
 			TodoListService service = new TodoListServiceImpl();
-			  // 2. 삭제할 할 일의 ID(번호) 파라미터로 받아오기
+			 
+			
+			// 2. 삭제할 할 일의 ID(번호) 파라미터로 받아오기
 			
 			int todoNo = Integer.parseInt(req.getParameter("todoNo"));
 		
@@ -35,12 +38,13 @@ public class TodoDeleteServlet extends HttpServlet{
 			String message = null;
 			
 			if(result> 0) message = "할일 삭제 성공!";
-			else 		  message = "할일 삭제 실패...";
+			else 		  message = "할일 삭제 실패...(todo가 존재하지 않습니다)";
+			//0반환됬을때는 todoNo가 일치하는게 없는거니까 
+			//존재하지 않아서 삭제를 못한거임 !!
 		
 			  // 5. 세션에 메시지 저장
             HttpSession session = req.getSession();
-			session.setAttribute("message", "todo가 존재하지 않습니다.");
-			
+			session.setAttribute("message", message);
 			
 			
 			//6.메인 페이지로 리다이렉트
@@ -49,11 +53,5 @@ public class TodoDeleteServlet extends HttpServlet{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	
-	
-	
-	
 	}
-	
-	
 }

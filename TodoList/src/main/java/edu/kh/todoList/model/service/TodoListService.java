@@ -37,7 +37,7 @@ public interface TodoListService {
 
 	/** 완료 여부 변경 서비스 
 	 * @param todoNo
-	 * @return 행의 갯수
+	 * @return int 행의 갯수
 	 * @throws Exception
 	 */
 	int todoComplete(int todoNo)throws Exception;
@@ -45,10 +45,19 @@ public interface TodoListService {
 
 	/** 할일 삭제 서비스
 	 * @param todoNo
-	 * @return
+	 * @return int 행의 갯수
 	 * @throws Exception
 	 */
 	int todoDelete(int todoNo)throws Exception;
+
+
+	/** 할일 수정 서비스 
+	 * @param todoNo
+	 * @param title
+	 * @param detail
+	 * @return 행의 갯수 
+	 */
+	int todoUpdate(int todoNo, String title, String detail)throws Exception;
 
 	
 }

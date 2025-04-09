@@ -31,15 +31,33 @@ completeBtn.addEventListener("click",()=>{
 
 
 //삭제 버튼
-const deleteBtn = document.querySelector("deleteBtn");
+const deleteBtn = document.querySelector("#deleteBtn");
 
 deleteBtn.addEventListener("click",()=>{
 	
+	//정말 삭제할 것인지 confirm()을 이용해서 확인
+	//confirm()은 확인 클릭시 true,취소 클릭시 false반환
+	
+	//취소 클릭시 
+	if(!confirm("정말 삭제했시겠습니까?")){
+		return;
+	}
+	
+	//확인 클릭시
+	// /todo/delete?todoNo=6 GET방식 보내기
 	location.href="/todo/delete?todoNo="+todoNo;
 });
 
 
 
 //수정 버튼
+const updateBtn = document.querySelector("#updateBtn");
+updateBtn.addEventListener("click",()=>{
+	
+	//수정 할 수있는 화면을 요청 (get방식)
+	location.href="/todo/update?todoNo="+todoNo;
+	
+	
+});
 
 
