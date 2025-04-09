@@ -12,7 +12,7 @@
 <title>${todo.todoTitle} 수정 페이지</title>
 </head>
 <body>
-
+	<h1>${sessionScope.loginMember}</h1>
 	<h4>할 일 수정</h4>
 	
 	
@@ -28,8 +28,7 @@
 		<div>
 			<textarea name ="detail" rows="3" cols="50" placeholder="상세 내용...">${todo.todoDetail}</textarea>
 		</div>
-		
-		
+			
 		
 		<%--todoNo도 수정 요청시 파라미터로 보내기 
 		왜 ? 
@@ -40,10 +39,8 @@
 		 --%>
 		<input type="hidden" name = "todoNo" value="${param.todoNo}">
 		
-		
 	<button>수정완료</button>
 	</form>
-
 
 			<%--session 범위에 message라는 key가 있을 경우  --%>
 			<c:if test ="${not empty sessionScope.message}">
@@ -58,9 +55,5 @@
 			<%--message를 한번만 출력하고 제거  --%>
 		<c:remove var = "message" scope ="session" />
 	</c:if>
-
-
-
-	
 </body>
 </html>
