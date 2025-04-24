@@ -49,7 +49,7 @@ public class TodoAddServlet extends HttpServlet{
 			//6.메인페이지로 rediredct(재요청)
 			//forward가 아님!!!
 			
-			resp.sendRedirect("/");
+			resp.sendRedirect("/main");
 			//-> "/" 최상위 경로로 재요청을 보냄.
 			//우리는 /main임
 			//-> "/" 처리하는 Servlet이 재요청됨.
